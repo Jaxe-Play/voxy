@@ -31,7 +31,7 @@ jobs:
           path: |
             **/build/libs/*.jar
           if-no-files-found: error
-          archive: false
+          archive: true
 
       - name: Find generated JARs
         run: find . -type f -name "*.jar"
